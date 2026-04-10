@@ -5,7 +5,7 @@ from connect import connect
 def insert_from_csv():
     conn = connect()
     cur = conn.cursor()
-
+    
     with open("contacts.csv", "r", encoding="utf-8") as f:
         reader = csv.reader(f)
         for row in reader:
